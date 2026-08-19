@@ -21,6 +21,7 @@ cd a2a-abundance
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 
+python code/download_data.py         # fetch MaveDB scores + AlphaMissense extracts
 python code/unified_pipeline.py      # main analysis, writes results/
 python code/prkn_site_isolation.py   # PRKN catalytic vs. structural decomposition
 python code/make_all_figures.py      # figures 1-2 and supplementary figure S1
@@ -36,6 +37,7 @@ the manuscript without any network access. See "Reproducibility" below.
 
 | Path | Contents |
 |---|---|
+| `code/download_data.py` | Downloads MaveDB score sets and extracts per-protein AlphaMissense predictions; documents which score set was chosen for each protein and why |
 | `code/unified_pipeline.py` | Main six-protein analysis: matching, A2A transform, correlation, enrichment testing, threshold sensitivity, FDR correction |
 | `code/prkn_site_isolation.py` | Decomposition of PRKN functional sites into catalytic and structural subsets |
 | `code/make_all_figures.py` | All manuscript figures |
@@ -78,6 +80,11 @@ the retrieval as used.
 
 Two things are worth knowing before re-running.
 
+**Data provenance.** `download_data.py` fetches everything from source;
+`unified_pipeline.py` will also download on demand if the caches are absent.
+Both write to the same locations, so either entry point works.
+
+
 **The pipeline queries live APIs.** `unified_pipeline.py` downloads from MaveDB
 and UniProt on first run and caches the results. The cached files are committed,
 so a fresh clone reproduces the published numbers exactly. Deleting them will
@@ -90,6 +97,7 @@ catalytic residues, and where curation reverses the direction of the apparent
 effect (PRKN). The curated site definitions are hardcoded in
 `MANUAL_SITE_OVERRIDES` in `unified_pipeline.py`, with the literature basis for
 each documented in Supplementary Table S2 of the manuscript.
+
 
 To confirm a clean reproduction, check that `results/all_proteins_summary.csv`
 matches:
@@ -113,7 +121,6 @@ directly, and note the commit or release you used.
 
 Please also cite the underlying resources: MaveDB (Esposito et al. 2019),
 AlphaMissense (Cheng et al. 2023), and UniProt (The UniProt Consortium 2025).
-
 
 ## License
 
