@@ -1,0 +1,66 @@
+Protein,UniProt_ID,Feature_type,Start,End,Length,Description,Decision,Reason,Manual_override
+ASPA,P45381,Active site,178,178,1,Proton donor/acceptor,Retained,,No
+ASPA,P45381,Binding site,21,21,1,,Retained,,No
+ASPA,P45381,Binding site,24,24,1,,Retained,,No
+ASPA,P45381,Binding site,63,63,1,,Retained,,No
+ASPA,P45381,Binding site,70,70,1,,Retained,,No
+ASPA,P45381,Binding site,71,71,1,,Retained,,No
+ASPA,P45381,Binding site,116,116,1,,Retained,,No
+ASPA,P45381,Binding site,164,164,1,,Retained,,No
+ASPA,P45381,Binding site,168,168,1,,Retained,,No
+ASPA,P45381,Binding site,288,288,1,,Retained,,No
+ASPA,P45381,Site,63,63,1,Transition state stabilizer,Retained,,No
+NUDT15,Q9NV35,Binding site,47,47,1,,Retained,,Yes
+NUDT15,Q9NV35,Binding site,49,49,1,,Retained,,Yes
+NUDT15,Q9NV35,Binding site,63,63,1,,Retained,,Yes
+NUDT15,Q9NV35,Binding site,67,67,1,,Retained,,Yes
+NUDT15,Q9NV35,Domain,9,145,137,Nudix hydrolase,Excluded,Broad structural domain,Yes
+NUDT15,Q9NV35,Motif,48,69,22,Nudix box,Retained,,Yes
+NUDT15,Q9NV35,Region,76,164,89,Interaction with PCNA,Excluded,Non-catalytic protein-protein interaction region,Yes
+PRKN,O60260,Active site,431,431,1,,Retained,,Yes
+PRKN,O60260,Binding site,238,238,1,,Retained,,Yes
+PRKN,O60260,Binding site,241,241,1,,Retained,,Yes
+PRKN,O60260,Binding site,253,253,1,,Retained,,Yes
+PRKN,O60260,Binding site,257,257,1,,Retained,,Yes
+PRKN,O60260,Binding site,260,260,1,,Retained,,Yes
+PRKN,O60260,Binding site,263,263,1,,Retained,,Yes
+PRKN,O60260,Binding site,289,289,1,,Retained,,Yes
+PRKN,O60260,Binding site,293,293,1,,Retained,,Yes
+PRKN,O60260,Binding site,332,332,1,,Retained,,Yes
+PRKN,O60260,Binding site,337,337,1,,Retained,,Yes
+PRKN,O60260,Binding site,352,352,1,,Retained,,Yes
+PRKN,O60260,Binding site,360,360,1,,Retained,,Yes
+PRKN,O60260,Binding site,365,365,1,,Retained,,Yes
+PRKN,O60260,Binding site,368,368,1,,Retained,,Yes
+PRKN,O60260,Binding site,373,373,1,,Retained,,Yes
+PRKN,O60260,Binding site,377,377,1,,Retained,,Yes
+PRKN,O60260,Binding site,418,418,1,,Retained,,Yes
+PRKN,O60260,Binding site,421,421,1,,Retained,,Yes
+PRKN,O60260,Binding site,436,436,1,,Retained,,Yes
+PRKN,O60260,Binding site,441,441,1,,Retained,,Yes
+PRKN,O60260,Binding site,446,446,1,,Retained,,Yes
+PRKN,O60260,Binding site,449,449,1,,Retained,,Yes
+PRKN,O60260,Binding site,457,457,1,,Retained,,Yes
+PRKN,O60260,Binding site,461,461,1,,Retained,,Yes
+PRKN,O60260,Domain,1,76,76,Ubiquitin-like,Excluded,Broad structural domain,Yes
+PRKN,O60260,Region,77,237,161,Necessary for PINK1-dependent localization to mitochondria,Excluded,Broad functional region,Yes
+PRKN,O60260,Region,77,99,23,Disordered,Excluded,Broad functional region,Yes
+PRKN,O60260,Region,204,238,35,SYT11 binding 1,Excluded,Broad functional region,Yes
+PRKN,O60260,Region,234,465,232,TRIAD supradomain,Excluded,Broad functional region,Yes
+PRKN,O60260,Region,257,293,37,SYT11 binding 2,Excluded,Broad functional region,Yes
+PRKN,O60260,Region,378,410,33,REP,Excluded,Broad functional region,Yes
+PTEN,P60484,Active site,124,124,1,Phosphocysteine intermediate,Superseded,Manual site set replaced automated annotation,Yes
+PTEN,P60484,Domain,14,185,172,Phosphatase tensin-type,Excluded,Broad structural domain,Yes
+PTEN,P60484,Domain,190,350,161,C2 tensin-type,Excluded,Broad structural domain,Yes
+PTEN,P60484,Motif,401,403,3,PDZ domain-binding,Excluded,Broad or non-catalytic annotation,Yes
+PTEN,P60484,Region,338,348,11,Required for interaction with NOP53,Excluded,Broad or non-catalytic annotation,Yes
+PTEN,P60484,Region,352,403,52,Disordered,Excluded,Broad or non-catalytic annotation,Yes
+TPMT,P51580,Binding site,29,40,12,,Retained,,No
+TPMT,P51580,Binding site,40,40,1,,Retained,,No
+TPMT,P51580,Binding site,69,69,1,,Retained,,No
+TPMT,P51580,Binding site,90,90,1,,Retained,,No
+TPMT,P51580,Binding site,134,135,2,,Retained,,No
+TPMT,P51580,Binding site,152,152,1,,Retained,,No
+VKORC1,Q9BQB6,Binding site,80,80,1,,Superseded,Manual site set replaced automated annotation,Yes
+VKORC1,Q9BQB6,Binding site,135,135,1,,Superseded,Manual site set replaced automated annotation,Yes
+VKORC1,Q9BQB6,Binding site,139,139,1,,Superseded,Manual site set replaced automated annotation,Yes
