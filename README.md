@@ -1,9 +1,5 @@
 # A2A: relating AlphaMissense pathogenicity predictions to experimental protein abundance
 
-Analysis code and derived data for the manuscript:
-
-> TODO_AUTHOR. *TODO_TITLE.* TODO_JOURNAL (submitted).
-
 A single fixed transformation of AlphaMissense pathogenicity scores is compared
 against multiplexed measurements of protein abundance and stability for six
 proteins (PTEN, TPMT, NUDT15, ASPA, PRKN, VKORC1), and variants predicted
