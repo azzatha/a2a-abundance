@@ -62,6 +62,16 @@ the manuscript without any network access. See "Reproducibility" below.
 | PRKN | `urn:mavedb:00000114-a-1` |
 | VKORC1 | `urn:mavedb:00000078-b-1` |
 
+Where a protein has more than one MaveDB score set, the one used was chosen to
+match the abundance/stability phenotype under study: ASPA `-a-1` (abundance,
+not `-b-1` toxicity), VKORC1 `-b-1` (stability, not `-a-1` carboxylation
+activity), and NUDT15 `-a-1` (stability, not the combined meta-analysis score).
+For PRKN, the original Clausen et al. abundance set was used rather than the
+later depolarisation-specific set (`urn:mavedb:00001281-a-1`), so that results
+remain comparable with the prior analysis of this protein by Livesey and Marsh.
+These choices are recorded in the `DATASETS` dictionary in
+`code/download_data.py`.
+
 **AlphaMissense** — predictions from `AlphaMissense_aa_substitutions.tsv.gz`,
 available from https://github.com/google-deepmind/alphamissense. This file is
 ~1 GB and is **not** included here. It is only needed to regenerate the
