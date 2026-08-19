@@ -1,5 +1,10 @@
 # A2A: relating AlphaMissense pathogenicity predictions to experimental protein abundance
 
+Analysis code and derived data for the manuscript:
+
+> Azza Althagafi. *Evidence for functional-site decoupling in protein abundance
+> assays using AlphaMissense scores.* Manuscript in preparation.
+
 A single fixed transformation of AlphaMissense pathogenicity scores is compared
 against multiplexed measurements of protein abundance and stability for six
 proteins (PTEN, TPMT, NUDT15, ASPA, PRKN, VKORC1), and variants predicted
@@ -102,10 +107,13 @@ matches:
 
 ## Citation
 
-If you use this code or the derived data, please cite the manuscript above.
+This manuscript is in preparation and not yet published; a full citation will
+be added here on publication. In the meantime, please cite this repository
+directly, and note the commit or release you used.
 
 Please also cite the underlying resources: MaveDB (Esposito et al. 2019),
 AlphaMissense (Cheng et al. 2023), and UniProt (The UniProt Consortium 2025).
+
 
 ## License
 
