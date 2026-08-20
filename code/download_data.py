@@ -28,28 +28,25 @@ DATASETS = {
         'urn': 'urn:mavedb:00000013-a-1',
         'uniprot': 'P60484',
         'verified': True,
-        'note': 'Matreyek et al. 2018, Nat Genet. Check UW data-use terms '
-                'at https://abundance.gs.washington.edu/ before publication use.'
+        'note': 'Matreyek et al. 2018, Nat Genet.'
     },
     'TPMT': {
         'urn': 'urn:mavedb:00000013-b-1',
         'uniprot': 'P51580',
         'verified': True,
-        'note': 'Matreyek et al. 2018, Nat Genet. Same UW terms as PTEN.'
+        'note': 'Matreyek et al. 2018, Nat Genet.'
     },
     'NUDT15': {
         'urn': 'urn:mavedb:00000055-a-1',
         'uniprot': 'Q9NV35',
         'verified': True,
-        'note': 'Suiter et al. 2020, PNAS. Protein stability set (not the -0-1 '
-                'combined meta-analysis score).'
+        'note': 'Suiter et al. 2020, PNAS.'
     },
     'ASPA': {
         'urn': 'urn:mavedb:00000657-a-1',
         'uniprot': 'P45381',
         'verified': True,
-        'note': 'Gronbaek-Thygesen et al. 2024, Nat Commun. Abundance set '
-                '(NOT -b-1, which is toxicity).'
+        'note': 'Gronbaek-Thygesen et al. 2024, Nat Commun.'
     },
     'PRKN': {
         'urn': 'urn:mavedb:00000114-a-1',
@@ -63,8 +60,7 @@ DATASETS = {
         'urn': 'urn:mavedb:00000078-b-1',
         'uniprot': 'Q9BQB6',
         'verified': True,
-        'note': 'Chiasson et al. 2020, eLife. Stability set (NOT -a-1, which '
-                'is carboxylation activity).'
+        'note': 'Chiasson et al. 2020, eLife.'
     },
 }
 

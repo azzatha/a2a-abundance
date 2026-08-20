@@ -101,7 +101,7 @@ MANUAL_SITE_OVERRIDES = {
     'VKORC1': {
         'positions': [43, 51, 55, 132, 135],
         'source': 'Catalytic C132XXC135 motif, C43/C51 cysteines involved in redox electron transfer, and '
-                   'functionally constrained Phe55 hypothesized to participate in vitamin K binding;',
+                   'functionally constrained Phe55 hypothesized to participate in vitamin K binding; Stolyarchuk et al. 2024',
         'reason': 'UniProt automated retrieval returned only 3 sparse Binding site '
                    'positions (80, 135, 139), insufficient to represent the '
                    'well-characterized four-cysteine catalytic cycle plus substrate-binding '
