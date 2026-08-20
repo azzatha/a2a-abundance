@@ -14,6 +14,9 @@ import re
 import requests
 from pathlib import Path
 from scipy import stats
+from sklearn.metrics import mean_absolute_error
+from statsmodels.stats.multitest import multipletests
+
 
 PROJECT_DIR = Path('pathogenicity_abundance_project')
 
@@ -65,7 +68,6 @@ PROTEIN_CONFIGS = {
 
 # Known catalytic/functional sites from literature, used ONLY as a
 # fallback when UniProt's automated annotation is too sparse (like PTEN).
-# Document any entry here explicitly in the paper's supplementary table.
 MANUAL_SITE_OVERRIDES = {
     'PTEN': {
         'positions': list(range(88, 99)) + list(range(123, 131)) + list(range(160, 172)),
@@ -249,8 +251,7 @@ def get_uniprot_sites(protein_name, uniprot_id):
     
     return raw_positions, 'uniprot_auto', raw_positions
 
-import requests
-import pandas as pd
+
 
 def export_uniprot_features(protein_name, uniprot_id):
     """
@@ -464,7 +465,6 @@ def run_pipeline_for_protein(protein_name, config):
     
     # --- Baseline check: does the A2A transformation add anything over raw ---
     # --- AlphaMissense pathogenicity, simply inverted? ---
-    from sklearn.metrics import mean_absolute_error
     raw_inverted = 1.0 - valid['am_pathogenicity']
 
     pearson_a2a, pearson_a2a_p = stats.pearsonr(valid['a2a_prediction'], valid[config['score_column']])
@@ -594,7 +594,6 @@ if __name__ == "__main__":
     # Multiple-testing correction (Benjamini-Hochberg) across the
     # six main enrichment tests 
     # ============================================================
-    from statsmodels.stats.multitest import multipletests
 
     valid_p_mask = summary_df['enrichment_p'].notna()
     if valid_p_mask.sum() > 0:
